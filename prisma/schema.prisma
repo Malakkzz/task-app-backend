@@ -27,7 +27,8 @@ model Task {
   hours      Int
   project    String
   difficulty DifficultyEnum
-  
-  createdAt  DateTime       @default(now())
-  updatedAt  DateTime       @updatedAt
+  order      Int
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
